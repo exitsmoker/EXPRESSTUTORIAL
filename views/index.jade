@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  ul(id="message")
+  form(action="")
+    input(id="m", autocomplete="off")
+    button Send
+  script(src="/socket.io/socket.io.js")
+  script(src="https://code.jquery.com/jquery-1.11.1.js")
+  script(src="/javascripts/makeSocketVariable.js")
